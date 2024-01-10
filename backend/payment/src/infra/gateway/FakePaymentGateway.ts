@@ -6,7 +6,7 @@ import PaymentGateway, {
 export default class FakePaymentGateway implements PaymentGateway {
   async createTransaction(input: Input): Promise<Output> {
     return {
-      tid: "3123123123",
+      tid: "123456678",
       status: "approved",
     };
   }

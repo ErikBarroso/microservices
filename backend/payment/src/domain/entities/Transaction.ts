@@ -1,12 +1,15 @@
+import crypto from "crypto";
+
 export default class Transaction {
-  constructor(
+  private constructor(
     readonly transactionId: string,
     readonly ticketId: string,
-    readonly eventiId: string,
+    readonly eventId: string,
     readonly tid: string,
     readonly price: number,
     readonly status: string
   ) {}
+
   static create(
     ticketId: string,
     eventId: string,
